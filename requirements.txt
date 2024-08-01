@@ -1,0 +1,9 @@
+gymnasium==1.0.0a2
+pytest
+numpy==1.21.0
+Pillow
+pyquaternion
+scipy
+natsort
+cffi==1.14.2
+pyreadline
