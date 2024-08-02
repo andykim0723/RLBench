@@ -5,13 +5,15 @@ This repository is to support [RLBench](https://github.com/stepjam/RLBench) in W
 
 ## Install
 
-First, install CoppeliaSim and PyRep following [this repository](https://github.com/tingelst/PyRep):
+Download CoppeliaSim_PyRep.zip following [this repository](https://github.com/tingelst/PyRep):
 ```bash
 # download CoppeliaSim_PyRep
 Invoke-WebRequest -uri "https://github.com/tingelst/PyRep/releases/download/windows-preview/CoppeliaSim_PyRep.zip" -Method "GET"  -Outfile "CoppeliaSim_PyRep.zip"
 Expand-Archive CoppeliaSim_PyRep.zip
 Remove-Item CoppeliaSim_PyRep.zip
-
+```
+Then install pyrep, rlbench:
+```bash
 # set environment variables
 $env:COPPELIASIM_ROOT='EDIT/ME/PATH/TO/COPPELIASIM/INSTALL/DIR'
 $env:LD_LIBRARY_PATH='$LD_LIBRARY_PATH:$COPPELIASIM_ROOT'
